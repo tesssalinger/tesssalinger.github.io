@@ -1,0 +1,147 @@
+/* Common styles for all screen sizes */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light";
+    font-weight: 200;
+    background-color: whitesmoke;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: grey;
+}
+
+header {
+    text-align: center;
+    font-size: 2em; /* Larger font size */
+    color: #262727; /* Dark grey color */
+    font-style: italic;
+    margin-bottom: 5px; /* Adjust spacing */
+    font-weight: 100;
+    padding: 20px 30px; 
+}
+
+h1 {
+    margin-top: 0;
+    font-weight: 200;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: 200;
+    font-size: 2em; /* Adjust the font size as needed */
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.p {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100;
+    line-break: loose;
+    padding: 40px;
+    text-align: center;
+}
+
+.video-container {
+    margin-top: 20px;
+    display: flex;
+    max-width: 100%;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+    position: relative;
+    overflow: hidden;
+}
+
+.photos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    font-weight: 100;
+    grid-gap: 10px;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+/* Heading style for photos */
+.photos h2 {
+    font-family: "HelveticaNeue-Light";
+    font-style: italic;
+    font-weight: 100;
+    font-size: 3em; /* Adjusted font size */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Paragraph style for photos */
+.photos p {
+    font-family: "HelveticaNeue-Light";
+    font-style: italic;
+    font-weight: 100;
+    font-size: 2em; /* Adjusted font size */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Image container styles */
+.photos img {
+    width: 40vh;
+    height: 30vh; /* Automatically adjust height to maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height for the images */
+    object-fit: cover; /* Crop the images while maintaining aspect ratio */
+}
+
+/* Responsive grid for photos */
+@media (max-width: 768px) {
+    .photos {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .photos {
+        grid-template-columns: 1fr; /* One column */
+    }
+}
+
+.contact {
+    text-align: center; /* Center text horizontally */
+    padding: 20px;
+    margin: 20px auto; /* Add margin to center vertically */
+    max-width: 600px; /* Limit maximum width */
+}
+
+.contact p {
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+}
+
+.contact img {
+    width: 30px; /* Adjust width of social icons */
+    margin: 0 5px; /* Add spacing between social icons */
+}

@@ -1,9 +1,20 @@
-const hamMenu = document.querySelector(".ham-menu");
+particleJS('particles-js',
 
-const offScreenMenu = document.querySelector(".off-screen-menu");
+{
+    "particles": {
+    "number": {
+    "value":  80,
+    "density": {
+        "enable": true,
+        "value_area" :800
+}
+    }, 
+    "color": {
+        "value" : "#fffff"
+    },
+    "shape": {
+        "type": "circle"
+    }
 
-hamMenu.addEventListener("click", () => {
-  hamMenu.classList.toggle("active");
-  offScreenMenu.classList.toggle("active");
-});
+} 
 
