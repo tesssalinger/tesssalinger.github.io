@@ -27,11 +27,13 @@ h1 {
 }
 
 header p {
-    line-height: 2.5rem;
-    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
     font-weight: 200;
     line-break: loose;
-    padding: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
 }
 
 .photo-gallery {
@@ -41,6 +43,18 @@ header p {
     gap: 10px; /* Add gap between images */
     margin: 0 auto; /* Center the container */
     padding: 10px; /* Add padding to the container */
+}
+
+.photo-gallery p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 200;
+    line-break: loose;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .photo-gallery img {
