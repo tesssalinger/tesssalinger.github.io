@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: "HelveticaNeue-Light";
     font-weight: 200;
-    background-color: whitesmoke;
+    background-color:#8DA2D0;
 }
 
 .home-button {
@@ -37,6 +37,26 @@ h1 {
     margin-top: 0;
     font-weight: 200;
 }
+.Bio {
+    text-align: center; /* Center text horizontally */
+    margin: 20px auto; /* Add margin to center vertically */
+    max-width: 600px; /* Limit maximum width */
+}
+
+.Bio img {
+    width: 40vh; /* Default width based on viewport height */
+    height: auto;
+}
+
+/* Adjust image size for smaller viewport widths */
+@media (max-width: 768px) {
+    .Bio img {
+        width: 80%; /* Adjust width for smaller screens */
+        max-width: 100px; /* Set a maximum width */
+        height: auto;
+    }
+}
+
 
 h2 {
     margin-top: 0;
