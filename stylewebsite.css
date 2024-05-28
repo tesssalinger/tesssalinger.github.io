@@ -69,10 +69,15 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #376e67;
+    color: #fff; /* White text color */
     font-size: 18px; /* Adjust font size */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Add transition for smooth hover effect */
 }
 
+nav ul li a:hover {
+    color: #FF9843; /* Orange text color on hover */
+    border-bottom-color: #FF9843; /* Orange underline color on hover */
+}
 
 .title {
     width: 70%; /* Ensure the div fills its container */
@@ -91,6 +96,7 @@ nav ul li a {
 }
 
 .Bio {
+    padding: 100px;
     text-align: center; /* Center text horizontally */
     margin: 20px auto; /* Add margin to center vertically */
     max-width: 600px; /* Limit maximum width */
@@ -114,28 +120,29 @@ p {
     color: whitesmoke;
     line-height: 2em;
 }
-
 .contact {
-    position: fixed; /* Position the element relative to the viewport */
-    left: 0; /* Align the left edge with the left edge of the viewport */
-    bottom: 0; /* Align the bottom edge with the bottom edge of the viewport */
-    width: 100%; /* Set width to cover the entire viewport */
-    text-align: center; /* Center text horizontally */
-    padding: 20px 0; /* Add padding for spacing */
-    background-color: tan; /* Set background color */
-    z-index: -1; /* Ensure it's above other elements */
+    text-align: center; /* Center-align the content */
+    padding: 220px;
+    background-color:#FFDD95;
+    color: white; /* Set the text color to white */
 }
 
+.icons {
+    display: flex; /* Display the icons in a horizontal line */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+}
+
+.icons img {
+    width: 30px; /* Set a fixed width for the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Add spacing between the icons */
+    
+}
 
 .contact p {
-    margin-bottom: 20px; /* Add spacing below the paragraph */
-}
-
-.contact img {
-    width: 30px; /* Adjust width of social icons */
-    padding: 50px;
-    padding-left: 20px;
-    margin: 0 5px; /* Add spacing between social icons */
+    margin-bottom: 10px; /* Add some spacing below the paragraph */
+    color: black;
 }
 
 .front {
@@ -186,7 +193,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px; /* Reduce horizontal padding */
+    padding: 50px; /* Reduce horizontal padding */
     padding-top:20px;
     scroll-margin-top: 100px; /* Adjust as needed */
 }
