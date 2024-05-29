@@ -35,16 +35,6 @@ header {
     padding: 20px 30px; 
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width: 600px) {
-    header {
-        margin-left: 10px; /* Adjust margin for smaller screens */
-        margin-right: 10px; /* Adjust margin for smaller screens */
-        font-size: 1.2em; /* Adjust font size for smaller screens */
-        padding: 10px 15px; /* Adjust padding for smaller screens */
-    }
-}
-
 h1 {
     margin-top: 0;
     font-weight: 200;
@@ -137,7 +127,7 @@ h2 {
 
 .photos-container h2 {
     margin-top: 40px;
-    margin-bottom: 0;
+    margin-bottom: ;
 }
 
 

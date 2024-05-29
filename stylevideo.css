@@ -20,7 +20,7 @@ body {
 }
 
 .home-button:hover {
-    background-color: #3468C0;
+    background-color:#3468C0;
 }
 
 header {
@@ -28,7 +28,6 @@ header {
     font-size: 2em;
     color: #262727;
     font-family: "HelveticaNeue-Light";
-    font-style: italic;
     margin-bottom: 5px;
     font-weight: 200;
     text-align: center;
@@ -40,16 +39,13 @@ h1 {
     font-weight: 200;
 }
 
-
-
-
-
 h2 {
     margin-top: 0;
     font-weight: 200;
     font-size: 0.7em; /* Adjust the font size as needed */
+    max-width: 80%; /* Limit the width to 80% of its containing element */
+    display: inline-block; /* Make it inline-block to allow width constraints */
 }
-
 
 .container {
     max-width: 800px;
@@ -82,12 +78,14 @@ video {
 }
 
 /* Heading style for photos and grace */
+/* Heading style for photos and grace */
 .photos h2, .grace h2, .firstrun h2, .Evenings h2 {
+    margin-top: 20%;
     grid-column: 1 / -1;
     font-family: "HelveticaNeue-Light";
-    font-weight: 100;
-    font-size: 1.7em;
-    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center; /* Center the heading */
     margin-bottom: 10px;
 }
 
@@ -95,10 +93,25 @@ video {
 .photos p, .grace p, .firstrun p, .Evenings p {
     grid-column: 1 / -1;
     font-family: "HelveticaNeue-Light";
-    font-weight: 100;
-    text-align: center;
+    font-weight: 50;
+    font-size: 1em;
+    text-align: center; /* Center the paragraph */
     margin-bottom: 10px;
 }
+
+/* Center h2 and p elements within .photos, .grace, .firstrun, and .Evenings */
+.photos, .grace, .firstrun, .Evenings {
+    text-align: center;
+}
+
+/* Adjust the margin and font size for better readability */
+.photos h2, .grace h2, .firstrun h2, .Evenings h2,
+.photos p, .grace p, .firstrun p, .Evenings p {
+    margin: 0 auto 10px; /* Center horizontally and add bottom margin */
+    margin-top: 2em;
+    max-width: 60%;
+}
+
 
 /* Responsive grid for photos and grace */
 @media (max-width: 768px) {
