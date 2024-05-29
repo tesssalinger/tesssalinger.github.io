@@ -65,8 +65,8 @@ header p {
 }
 
 .photo-gallery p {
-    line-height: 1.5rem;
-    font-size: 1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
     font-weight: 200;
     line-break: loose;
     width: 100%;
@@ -102,7 +102,7 @@ header p {
 }
 
 .home-button:hover {
-    background-color:grey; /* Button background color on hover */
+    background-color: #3468C0;
 }
 
 .video-container {
@@ -115,9 +115,13 @@ header p {
     overflow: hidden;
 }
 
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 .sculptures h2 {
     display: flex;
-    font-style: italic;
     font-family: "HelveticaNeue-Light";
     size: 4rem;
     font-weight: 100;
@@ -126,14 +130,22 @@ header p {
 
 .sculptures p {
     display: flex;
-    font-style: italic;
     justify-content: center;
     line-height: 2.5rem;
     font-size: 1.5rem;
     font-weight: 200;
-    line-break: loose;
     padding: 50px;
 }
+
+/* For screens smaller than 600px (typical mobile screens) */
+@media screen and (max-width: 600px) {
+    .sculptures p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        line-height: 1.6; /* Adjust line height for easier readability */
+        margin-bottom: 20px; /* Add some bottom margin for separation */
+    }
+}
+
 
 .video-container iframe {
     position: absolute;

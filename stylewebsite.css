@@ -100,7 +100,14 @@ nav ul li a:hover {
     text-align: center; /* Center text horizontally */
     margin: 20px auto; /* Add margin to center vertically */
     max-width: 600px; /* Limit maximum width */
+    color: #FF9843;
 }
+
+
+.Bio p {
+    color: #000000;
+}
+
 
 .Bio img {
     width: 40vh; /* Default width based on viewport height */
@@ -258,7 +265,7 @@ p {
 }
 
 .text {
-    color: rgb(0, 0, 0);
+    color: #ffffff;;
     font-size: 24px;
     margin-right: 0; /* Adjust spacing between texts */
 }

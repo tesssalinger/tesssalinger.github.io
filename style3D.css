@@ -20,17 +20,29 @@ body {
 }
 
 .home-button:hover {
-    background-color: grey;
+    background-color: #3468C0;
 }
 
 header {
     text-align: center;
-    font-size: 2em; /* Larger font size */
+    font-size: 1.5em; /* Larger font size */
+    max-width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
     color: #262727; /* Dark grey color */
-    font-style: italic;
     margin-bottom: 5px; /* Adjust spacing */
     font-weight: 100;
     padding: 20px 30px; 
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 600px) {
+    header {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
 }
 
 h1 {
@@ -67,20 +79,10 @@ h2 {
 
 .container {
     max-width: 800px;
-    font-style: italic;
     margin: 0 auto;
     padding: 20px;
 }
 
-.p {
-    line-height: 2.5rem;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 100;
-    line-break: loose;
-    padding: 40px;
-    text-align: center;
-}
 
 .video-container {
     margin-top: 20px;
@@ -98,6 +100,7 @@ h2 {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .photos {
@@ -109,25 +112,6 @@ h2 {
     align-items: center; /* Center the content vertically */
 }
 
-/* Heading style for photos */
-.photos h2 {
-    font-family: "HelveticaNeue-Light";
-    font-style: italic;
-    font-weight: 100;
-    font-size: 3em; /* Adjusted font size */
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* Paragraph style for photos */
-.photos p {
-    font-family: "HelveticaNeue-Light";
-    font-style: italic;
-    font-weight: 100;
-    font-size: 2em; /* Adjusted font size */
-    margin-bottom: 10px;
-    text-align: center;
-}
 
 /* Image container styles */
 .photos img {
@@ -150,6 +134,17 @@ h2 {
     }
 }
 
+
+.photos-container h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+
+.photos-container p {
+    display: flex;
+    justify-content: center;
+}
 .contact {
     text-align: center; /* Center text horizontally */
     padding: 20px;
