@@ -65,8 +65,8 @@ header p {
 }
 
 .photo-gallery p {
-    line-height: 2rem;
-    font-size: 1.5rem;
+    line-height: 25rem;
+    font-size: 2rem;
     font-weight: 200;
     line-break: loose;
     width: 100%;
