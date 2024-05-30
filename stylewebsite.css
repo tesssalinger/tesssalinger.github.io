@@ -251,6 +251,18 @@ html, body {
     display: block;
 }
 
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .work {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+    }
+
+    .work-item {
+        width: 100%; /* Make each work item full width */
+    }
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -274,6 +286,15 @@ html, body {
     font-size: 24px;
     text-align: center;
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .overlay {
+        opacity: 1; /* Ensure the overlay is always visible */
+    }
+}
+
 
 .banner {
     position: relative;
