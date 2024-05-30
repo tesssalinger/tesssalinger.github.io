@@ -20,9 +20,17 @@ h1 {
     margin-top: 0;
 }
 .Bio {
-    text-align: center; /* Center text horizontally */
     margin: 20px auto; /* Add margin to center vertically */
-    max-width: 600px; /* Limit maximum width */
+    max-width: 1000px; /* Limit maximum width */
+    text-align: center; /* Align text to the left */
+}
+
+/* Adjust text size for smaller viewport widths */
+@media (max-width: 768px) {
+    .Bio {
+        text-align: justify; /* Justify text on smaller screens */
+    }
+
 }
 
 .Bio img {
@@ -39,20 +47,31 @@ h1 {
     }
 }
 
+.text {
+    margin-top: 20px; /* Add margin above the text */
+    padding: 0 20px; /* Add padding to the sides */
+    padding-bottom: 20px;
+    text-align: center; /* Center text horizontally */
+    font-family: "HelveticaNeue-Light";
+    font-size: 1.2em; /* Default font size */
+    line-height: 1.5; /* Default line height */
+    max-width: 800px; /* Set a maximum width for the text */
+    margin: 0 auto; /* Center the text horizontally */
+}
+
+/* Adjust text size for smaller viewport widths */
+@media (max-width: 768px) {
+    .text {
+        font-size: 1em; /* Adjust font size for smaller screens */
+        line-height: 1.3; /* Adjust line height for smaller screens */
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 50px;
-}
-
-header p {
-    line-height: 1.5rem;
-    font-size: 1rem;
-    font-weight: 200;
-    line-break: loose;
-    width: 100%;
-    text-align: center;
-    padding: 0px;
 }
 
 .photo-gallery {
