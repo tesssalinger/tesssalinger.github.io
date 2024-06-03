@@ -86,6 +86,13 @@ nav ul li a:hover {
     width: 70%; /* Ensure the div fills its container */
 }
 
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media only screen and (max-width: 768px) {
+    .title {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
 .title object {
     width: 100%; /* Make the SVG image fill its container */
     height: auto; /* Maintain aspect ratio */
@@ -125,7 +132,7 @@ nav ul li a:hover {
     }
 
     .Bio {
-        padding: 10vw; /* Adjust padding for smaller screens */
+        padding: 20vw; /* Adjust padding for smaller screens */
     }
 
     .Bio p {
@@ -182,7 +189,6 @@ html, body {
     }
 }
 
-
 .front {
     min-height: calc(100vh - 160px); /* Adjust min-height for smaller screens */
     background-color:#8DA2D0;
@@ -195,6 +201,14 @@ html, body {
     padding: 0; /* Adjust padding for better spacing */
     position: relative;
 }
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media only screen and (max-width: 768px) {
+    .front {
+        padding: 0 0 0 0 px; /* Adjust padding for smaller screens */
+    }
+}
+
 
 .front h1 {
     font-size: 10em; /* Adjust font size for smaller screens */
@@ -309,6 +323,14 @@ html, body {
     margin: 0; /* Remove margin */
     padding: 0; /* Remove padding */
 }
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media only screen and (max-width: 768px) {
+    .banner {
+        height: 70px; /* Adjust height for mobile */
+    }
+}
+
 
 .banner-text {
     color: #fff; /* Text color */
