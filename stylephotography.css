@@ -201,18 +201,39 @@ video {
 }
 
 .contact {
-    text-align: center; /* Center text horizontally */
-    margin: 20px auto; /* Add margin to center vertically */
-    max-width: 600px; /* Limit maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center icons vertically */
+    margin: 0;               /* Remove margin */
+    padding: 20px;           /* Add padding for spacing */
+    background-color: orange; /* Orange background */
+    color: white;            /* Text color */
+    position: relative;      /* Set positioning context */
+    bottom: 0;               /* Align at the bottom */
+    width: 100%;             /* Stretch to full width */
 }
 
-.contact p {
-    margin-bottom: 20px; /* Add spacing below the paragraph */
+.icons {
+    display: flex;           /* Use flexbox for icons */
+    justify-content: center; /* Center icons horizontally */
+    
 }
 
-.contact img {
-    width: 30px; /* Adjust width of social icons */
-    margin: 0 5px; /* Add spacing between social icons */
+.icon {
+    width: 30px;            /* Smaller icon size */
+    height: 30px;           /* Smaller icon size */
+    margin: 0 10px;         /* Spacing between icons */
+    filter: brightness(0) invert(1); /* Change black to white */
+}
+
+a {
+    color: orange;           /* Icon link color */
+    text-decoration: none;   /* Remove underline */
+}
+
+a:hover {
+    opacity: 0.8;           /* Slight opacity on hover */
 }
 
 
