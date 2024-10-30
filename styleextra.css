@@ -1,7 +1,12 @@
 /* Common styles for all screen sizes */
+html, body {
+    height: 100%; /* Make sure the body takes full height */
+    margin: 0; /* Reset margin */
+}
+
 body {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
     font-family: "HelveticaNeue-Light", Arial, sans-serif;
     background-color: #8DA2D0;
 }
@@ -148,52 +153,48 @@ h1 {
 }
 
 .contact {
+    margin-top: auto; /* Pushes the contact section to the bottom */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center icons vertically */
-    margin: 0;               /* Remove margin */
-    padding: 20px;           /* Add padding for spacing */
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing */
     background-color: orange; /* Orange background */
-    color: white;            /* Text color */
-    position: relative;      /* Set positioning context */
-    bottom: 0;               /* Align at the bottom */
-    width: 100%;             /* Stretch to full width */
+    color: white; /* Text color */
+    width: 100%; /* Stretch to full width */
 }
 
 .icons {
-    display: flex;           /* Use flexbox for icons */
+    display: flex; /* Use flexbox for icons */
     justify-content: center; /* Center icons horizontally */
-    
 }
 
 .icon {
-    width: 30px;            /* Smaller icon size */
-    height: 30px;           /* Smaller icon size */
-    margin: 0 10px;         /* Spacing between icons */
+    width: 30px; /* Smaller icon size */
+    height: 30px; /* Smaller icon size */
+    margin: 0 10px; /* Spacing between icons */
     filter: brightness(0) invert(1); /* Change black to white */
 }
 
 a {
-    color: orange;           /* Icon link color */
-    text-decoration: none;   /* Remove underline */
+    color: orange; /* Icon link color */
+    text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-    opacity: 0.8;           /* Slight opacity on hover */
+    opacity: 0.8; /* Slight opacity on hover */
 }
-
 
 .description {
     font-family: Arial, sans-serif;
     margin: 0px;
     padding-left: 10%;
     padding-right: 10%;
-    display: flex;             /* Use flexbox for centering */
-    flex-direction: column;    /* Stack items vertically */
-    align-items: center;       /* Center items horizontally */
-    text-align: center;  
-    color: whitesmoke;      /* Center text within the description */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    color: whitesmoke; /* Center text within the description */
 }
 
 .imdb-link {
@@ -204,10 +205,23 @@ a:hover {
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 10px;         /* Add some space above the link */
+    margin-top: 10px; /* Add some space above the link */
 }
 
 .imdb-link:hover {
     background-color: darkorange;
 }
 
+.project-container {
+    margin: 20px auto; /* Centers the container */
+    padding: 20px; /* Adds padding inside the container */
+    max-width: 600px; /* Sets a maximum width for the container */
+    text-align: center; /* Centers the text inside the container */
+    background-color: rgb(209, 209, 239); /* Optional: adds a background color */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+}
+
+.project-container h2 {
+    line-height: 1.5; /* Increases line height for better spacing */
+}

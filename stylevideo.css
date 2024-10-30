@@ -2,9 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "HelveticaNeue-Light";
+    font-family: "HelveticaNeue-Light", Arial, sans-serif;
     font-weight: 200;
-    background-color:#8DA2D0;
+    background-color: #8DA2D0;
 }
 
 .home-button {
@@ -20,17 +20,14 @@ body {
 }
 
 .home-button:hover {
-    background-color:#3468C0;
+    background-color: #3468C0;
 }
 
 header {
     text-align: center;
     font-size: 2em;
     color: #262727;
-    font-family: "HelveticaNeue-Light";
     margin-bottom: 5px;
-    font-weight: 200;
-    text-align: center;
     padding: 20px 0;
 }
 
@@ -42,16 +39,16 @@ h1 {
 h2 {
     margin-top: 0;
     font-weight: 200;
-    font-size: 0.7em; /* Adjust the font size as needed */
-    max-width: 80%; /* Limit the width to 80% of its containing element */
-    display: inline-block; /* Make it inline-block to allow width constraints */
+    font-size: 0.7em;
+    max-width: 80%;
+    display: inline-block;
 }
 
 .video-container {
     position: relative;
     width: 100%;
-    padding-bottom: calc(1440 / 2304 * 100%); /* Aspect ratio of the video */
-    overflow: hidden; /* Hide overflow */
+    padding-bottom: calc(1440 / 2304 * 100%);
+    overflow: hidden;
 }
 
 .video-container iframe {
@@ -60,9 +57,8 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 0; /* Remove border */
+    border: 0;
 }
-
 
 .container {
     max-width: 800px;
@@ -72,116 +68,105 @@ h2 {
 
 p {
     line-height: 1;
-    font-size: 0.9em; /* Adjust the font size as needed */
+    font-size: 0.9em;
     font-weight: 300;
-    font-family: "HelveticaNeue-Light", Arial, sans-serif; /* Added fallback fonts */
     text-align: center;
-    margin-bottom: 10px; /* Increased margin-bottom for better separation */
-}
-
-video {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /* Grid layout for photos */
-.photos, .grace, .firstrun, .Evenings {
+.photos, .grace {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
-    font-weight: 100;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     padding: 20px;
 }
 
-/* Heading style for photos and grace */
-/* Heading style for photos and grace */
-.photos h2, .grace h2, .firstrun h2, .Evenings h2 {
-    margin-top: 20%;
+/* Center text for photos and grace */
+.photos, .grace {
+    text-align: center;
+}
+
+.photos h2, .grace h2 {
     grid-column: 1 / -1;
     font-family: "HelveticaNeue-Light";
     font-weight: 300;
     font-size: 1.5em;
-    text-align: center; /* Center the heading */
     margin-bottom: 10px;
 }
 
-/* Paragraph style for photos and grace */
-.photos p, .grace p, .firstrun p, .Evenings p {
+.photos p, .grace p {
     grid-column: 1 / -1;
     font-family: "HelveticaNeue-Light";
     font-weight: 50;
     font-size: 1em;
-    text-align: center; /* Center the paragraph */
     margin-bottom: 10px;
 }
 
-/* Center h2 and p elements within .photos, .grace, .firstrun, and .Evenings */
-.photos, .grace, .firstrun, .Evenings {
-    text-align: center;
-}
-
-/* Adjust the margin and font size for better readability */
-.photos h2, .grace h2, .firstrun h2, .Evenings h2,
-.photos p, .grace p, .firstrun p, .Evenings p {
-    margin: 0 auto 10px; /* Center horizontally and add bottom margin */
-    margin-top: 2em;
-    max-width: 60%;
-}
-
-
 /* Responsive grid for photos and grace */
 @media (max-width: 768px) {
-    .photos, .grace, .firstrun, .Evenings {
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    .photos, .grace {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .photos, .grace, .firstrun, .Evenings {
-        grid-template-columns: 1fr; /* One column */
+    .photos, .grace {
+        grid-template-columns: 1fr;
     }
 }
 
 /* Image container styles */
-.photos img, .grace img, .firstrun img, .Evenings img {
+.photos img, .grace img {
     width: 100%;
-    height: 200px; /* Auto height for responsiveness */
-    object-fit: cover; /* Crop the images while maintaining aspect ratio */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Crop the images while maintaining aspect ratio */; /* Optional: adds rounded corners to images */
+}
+
+
+/* Box styles */
+.box {
+    background-color: white; /* White background for the box */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 20px auto; /* Center the box with auto margins */
+    max-width: 600px; /* Set a maximum width for the box */
+    width: 100%; /* Full width to center */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text inside the box */
 }
 
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center icons vertically */
-    margin: 0;               /* Remove margin */
-    padding: 20px;           /* Add padding for spacing */
-    background-color: orange; /* Orange background */
-    color: white;            /* Text color */
-    position: relative;      /* Set positioning context */
-    bottom: 0;               /* Align at the bottom */
-    width: 100%;             /* Stretch to full width */
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    background-color: orange;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .icons {
-    display: flex;           /* Use flexbox for icons */
+    display: flex; /* Use flexbox for icons */
     justify-content: center; /* Center icons horizontally */
-    
 }
 
 .icon {
-    width: 30px;            /* Smaller icon size */
-    height: 30px;           /* Smaller icon size */
-    margin: 0 10px;         /* Spacing between icons */
+    width: 30px; /* Smaller icon size */
+    height: 30px; /* Smaller icon size */
+    margin: 0 10px; /* Spacing between icons */
     filter: brightness(0) invert(1); /* Change black to white */
 }
 
 a {
-    color: orange;           /* Icon link color */
-    text-decoration: none;   /* Remove underline */
+    color: orange; /* Icon link color */
+    text-decoration: none; /* Remove underline */
 }
 
 a:hover {
-    opacity: 0.8;           /* Slight opacity on hover */
+    opacity: 0.8; /* Slight opacity on hover */
 }
