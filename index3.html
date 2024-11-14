@@ -11,9 +11,29 @@
     <header>
         <div class="bioimg">
             <object type="image/svg+xml" data="img/3D.svg"></object>
-        </div> <!-- Added closing tag for .bioimg div -->
-        <p class="header-text">Over the last three years, Tess has immersed herself in the world of 3D design, learning tools like Maya, Blender, Illustrator, Substance Painter, Photoshop, and Unity. From texturing and modeling to shading and sculpting,  her skills to bring digital creations to life. Importing her work into Unity, She has explored the exciting realm of game development, blending creativity with technical expertise to craft immersive experiences.</p>
+        </div>
+        <p class="header-text">Over the last three years, Tess has immersed herself in the world of 3D design, learning tools like Maya, Blender, Illustrator, Substance Painter, Photoshop, and Unity. From texturing and modeling to shading and sculpting, her skills to bring digital creations to life. Importing her work into Unity, She has explored the exciting realm of game development, blending creativity with technical expertise to craft immersive experiences</p>
     </header>
+
+    <div class="gallery-container">
+        <!-- Image Display Section -->
+        <div class="image-display">
+            <img class="gallery-image" src="img/3d/3d scene.png" alt="Gallery Image" />
+            <img class="gallery-image" src="img/3d/computer2.png" alt="Gallery Image" />
+            <img class="gallery-image" src="img/3d/egg.png" alt="Gallery Image" />
+            <img class="gallery-image" src="img/3d/jellyfish.png" alt="Gallery Image" />
+            <img class="gallery-image" src="img/3d/picnic.png" alt="Gallery Image" />
+            <img class="gallery-image" src="img/3d/tree.png" alt="Gallery Image" />
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button id="prev-btn" onclick="showPrevImage()">Previous</button>
+            <button id="next-btn" onclick="showNextImage()">Next</button>
+        </div>
+    </div>
+
+    <!-- Rest of your page content remains unchanged -->
     <div class="container">
         <div class="photos-container">
             <div class="photos">
@@ -26,24 +46,21 @@
                 <img src="img/r6min.jpg" alt="Photo 7">
                 <img src="img/r5min.jpg" alt="Photo 8">
             </div>
+
+            <div class=" box"> 
             <h2>Reminiscene</h2>
-            <p>This was Tess's first time making a multiple scene virtual walkthroughgame. She used Unity to put all the elements together.
-                Using Maya, she crafted intricate models, while Photoshop and Illustrator brought them to life with 
-                vibrant textures. Delving into sound design added depth to the experience. With C++ coding, she seamlessly 
-                integrated everything into Unity. It was a rewarding journey that taught her the journey of
-                game development from start to finish.</p>
+            <p>This was Tess's first time making a multiple scene virtual walkthroughgame. She used Unity to put all the elements together. Using Maya, she crafted intricate models, while Photoshop and Illustrator brought them to life with vibrant textures. Delving into sound design added depth to the experience. With C++ coding, she seamlessly integrated everything into Unity. It was a rewarding journey that taught her the journey of game development from start to finish.</p>
+        </div>
         </div>
     </div>
 
     <section id="contact" class="contact">
-        <a href="https://www.linkedin.com/in/tess-salinger-b865972b9/">
-            <img src="img/linkedin.png" alt="LinkedIn"></a>
-        <a href="https://www.youtube.com/channel/UCmobJQ0i_DJEEEKBqYTpfiQ">
-            <img src="img/youtube.png" alt="Youtube"></a>
-        <a href="https://www.instagram.com/thisismyperception/?hl=en">
-            <img src="img/instagram.png" alt="Instagram"></a>
-        <a href="https://vimeo.com/user54674996">
-            <img src="img/vimeo.png" alt="Vimeo"></a>
+        <a href="https://www.linkedin.com/in/tess-salinger-b865972b9/"><img src="img/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.youtube.com/channel/UCmobJQ0i_DJEEEKBqYTpfiQ"><img src="img/youtube.png" alt="Youtube"></a>
+        <a href="https://www.instagram.com/thisismyperception/?hl=en"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://vimeo.com/user54674996"><img src="img/vimeo.png" alt="Vimeo"></a>
     </section>
+
+    <script src="script3d.js"></script>
 </body>
 </html>

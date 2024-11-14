@@ -1,10 +1,23 @@
+/* Apply box-sizing globally to prevent issues with padding and borders */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Common styles for all screen sizes */
 html, body {
     margin: 0;
     padding: 0;
     height: auto; 
-    font-family: "HelveticaNeue-Light", Arial, sans-serif;               /* Allow body to grow with content */
+    font-family: "HelveticaNeue-Light", Arial, sans-serif;  /* Allow body to grow with content */
     background-color: #8DA2D0;  /* Background color */
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
 }
 
 .home-button {
@@ -28,7 +41,7 @@ header {
     padding: 20px;
     font-size: 1.5em;
     text-align: center;
-    min-width: 70%;
+    width: 100%;  /* Make header take full width */
     max-width: 800px;
     margin: 0 auto;
 }
@@ -42,14 +55,15 @@ h1 {
     margin-top: 0;
     font-weight: 200;
 }
+
 .container {
-    max-width: 800px;            /* Limit max width */
-    margin: 0 auto;              /* Center the container */
-    padding: 20px;               /* Padding for inner spacing */
-    width: 100%;                 /* Ensure it takes full width */
+    max-width: 800px;  /* Limit max width */
+    margin: 0 auto;  /* Center the container */
+    padding: 20px;  /* Padding for inner spacing */
+    width: 100%;  /* Ensure it takes full width */
 }
 
-
+/* Box Styling */
 .box {
     background-color: white;
     border: 1px solid #ccc;
@@ -64,46 +78,110 @@ h1 {
 }
 
 .box-photo {
-    width: 30%; /* Adjust width to make the image smaller */
-    height: auto; /* Maintain aspect ratio */
-    opacity: 0.6; /* Set opacity to 60% */
-    display: block; /* Ensure the image behaves as a block element */
-    margin: 0px auto 0; /* Center the image and add margin above it */
+    width: 30%;  /* Adjust width to make the image smaller */
+    height: auto;  /* Maintain aspect ratio */
+    opacity: 0.6;  /* Set opacity to 60% */
+    display: block;  /* Ensure the image behaves as a block element */
+    margin: 0px auto 0;  /* Center the image and add margin above it */
 }
 
+/* Contact Section */
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;          /* Center icons horizontally */
-    justify-content: center;      /* Center icons vertically */
-    margin: 20px 0;              /* Add margin above and below */
-    padding: 20px;               /* Padding for spacing */
-    background-color: orange;    /* Orange background */
-    color: white;                /* Text color */
-    width: 100%;                 /* Ensure full width */
-    position: relative;          /* Relative positioning */
-    clear: both;                 /* Clear floats (if any) */
+    align-items: center;  /* Center icons horizontally */
+    justify-content: center;  /* Center icons vertically */
+    margin: 20px 0;  /* Add margin above and below */
+    padding: 20px;  /* Padding for spacing */
+    background-color: orange;  /* Orange background */
+    color: white;  /* Text color */
+    width: 100%;  /* Ensure full width */
+    position: relative;  /* Relative positioning */
+    clear: both;  /* Clear floats (if any) */
 }
 
+/* Icon container */
 .icons {
-    display: flex;           /* Use flexbox for icons */
-    justify-content: center; /* Center icons horizontally */
-    
+    display: flex;  /* Use flexbox for icons */
+    justify-content: center;  /* Center icons horizontally */
 }
 
+/* Individual icon */
 .icon {
-    width: 30px;            /* Smaller icon size */
-    height: 30px;           /* Smaller icon size */
-    margin: 0 10px;         /* Spacing between icons */
-    filter: brightness(0) invert(1); /* Change black to white */
+    width: 30px;  /* Smaller icon size */
+    height: 30px;  /* Smaller icon size */
+    margin: 0 10px;  /* Spacing between icons */
+    filter: brightness(0) invert(1);  /* Change black to white */
 }
 
 a {
-    color: orange;           /* Icon link color */
-    text-decoration: none;   /* Remove underline */
+    color: orange;  /* Icon link color */
+    text-decoration: none;  /* Remove underline */
 }
 
 a:hover {
-    opacity: 0.8;           /* Slight opacity on hover */
+    opacity: 0.8;  /* Slight opacity on hover */
 }
 
+/* Media Queries */
+
+/* For devices with a max width of 768px (tablets, large phones) */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .box {
+        font-size: 1em;  /* Slightly smaller text in boxes */
+        padding: 15px;  /* Reduced padding */
+    }
+
+    .box-photo {
+        width: 50%;  /* Adjust image width for smaller screens */
+    }
+
+    .contact {
+        padding: 15px;  /* Reduced padding for mobile */
+    }
+
+    .icon {
+        width: 25px;  /* Smaller icons for mobile */
+        height: 25px;
+    }
+}
+
+/* For devices with a max width of 480px (phones) */
+@media (max-width: 480px) {
+    header {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .box {
+        font-size: 0.9em;  /* Even smaller text */
+        padding: 10px;  /* Reduced padding */
+    }
+
+    .box-photo {
+        width: 60%;  /* Further reduce image width */
+    }
+
+    .contact {
+        flex-direction: column;  /* Ensure the contact section stacks vertically */
+        padding: 10px;
+    }
+
+    .icon {
+        width: 20px;  /* Even smaller icons */
+        height: 20px;
+    }
+}
